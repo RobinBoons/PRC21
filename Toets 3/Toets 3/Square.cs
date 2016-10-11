@@ -9,8 +9,8 @@ namespace Toets_3
 {
     class Square : Shape
     {
-        private int Lenght;
-        private double Area;
+        private int Lenght { get; set; }
+        private double Area { get; set; }
 
         public Square(int x, int y, int z, Color color, int length) : base(x, y, z, color)
         {

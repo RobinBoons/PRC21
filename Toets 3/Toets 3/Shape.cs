@@ -10,11 +10,11 @@ namespace Toets_3
 {
     public abstract class Shape: IComparable, IDrawable
     {
-        private int X;
-        private int Y;
-        private int Z;
-        private abstract double Area;
-        private Color Color;
+        private int X { get; set; }
+        private int Y { get; set; }
+        private int Z { get; set; }
+        private abstract double Area { get; set; }
+        private Color Color { get; set; }
 
         private Shape(int x, int y, int z, Color color)
         {
