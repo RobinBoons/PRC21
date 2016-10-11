@@ -52,8 +52,13 @@
     <Compile Include="..\..\..\..\GitHub\PRC21\Toets 3.Designer.cs">
       <DependentUpon>Toets 3.cs</DependentUpon>
     </Compile>
+    <Compile Include="circle.cs" />
+    <Compile Include="DrawingBox.cs" />
+    <Compile Include="IDrawable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Square.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
