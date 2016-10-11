@@ -15,6 +15,7 @@ namespace Toets_3
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show("Test");
         }
     }
 }
