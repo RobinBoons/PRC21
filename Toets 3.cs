@@ -16,7 +16,11 @@ namespace Toets_3
         {
             InitializeComponent();
             MessageBox.Show("Test");
+<<<<<<< HEAD
             MessageBox.Show("TestRobin");
+=======
+            MessageBox.Show("TestMarijn");
+>>>>>>> origin/master
         }
     }
 }
