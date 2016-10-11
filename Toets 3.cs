@@ -16,6 +16,7 @@ namespace Toets_3
         {
             InitializeComponent();
             MessageBox.Show("Test");
+            MessageBox.Show("TestMarijn");
         }
     }
 }
