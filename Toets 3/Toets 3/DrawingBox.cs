@@ -76,11 +76,11 @@ namespace Toets_3
             }
         }
 
-        private void CheckFile(string fileName)
+        private static void CheckFile(string fileName)
         {
             if (fileName.Trim().Length <= 0)
             {
-                throw new ArgumentOutOfRangeException("the filename does not contain any text");
+                throw new ArgumentOutOfRangeException();
             }
         }
     }
