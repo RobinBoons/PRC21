@@ -11,7 +11,6 @@ namespace Toets_3
 {
     interface IDrawable
     {
-        //ff kijken hoe dat ook weer met prijs zat
-        DrawTo(Graphics drawingSurface);
+       void DrawTo(Graphics drawingSurface);
     }
 }

@@ -8,15 +8,19 @@ using System.Windows.Forms;
 
 namespace Toets_3
 {
-    public abstract class Shape: IComparable, IDrawable
+    public abstract class Shape : IComparable<Shape>, IDrawable
     {
-        private int X { get; set; }
-        private int Y { get; set; }
-        private int Z { get; set; }
-        private abstract double Area { get; set; }
-        private Color Color { get; set; }
+        public int CompareTo(Shape otherShape)
+        {
+            return Z.CompareTo(otherShape.Z);
+        }
+        public int X { get; private set; }
+        public int Y { get; private set; }
+        public int Z { get; private set; }
+        public abstract double Area { get; set; }
+        public Color Color { get; private set; }
 
-        private Shape(int x, int y, int z, Color color)
+        protected Shape(int x, int y, int z, Color color)
         {
             X = x;
             Y = y;
@@ -24,7 +28,7 @@ namespace Toets_3
             Color = color;
         }
 
-        public abstract void DrawTo(Graphics drawingSurface)
+        public abstract DrawTo(Graphics drawingSurface)
         {
             ;
         }

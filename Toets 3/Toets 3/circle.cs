@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Toets_3
 {
-    public class circle : Shape
+    public class Circle : Shape
     {
-        private int Radius { get; set; }
-        private double Area { get; set; }
+        public int Radius { get; private set; }
+        public override double Area { get; set; }
 
         public Circle(int x, int y, int z, Color color, int radius) : base(x, y, z, color)
         {
